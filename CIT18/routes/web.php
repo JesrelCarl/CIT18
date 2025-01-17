@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\GreetController;
+use App\Http\Controllers\GreetController;
 
-//Default route
+// Default route
 Route::get('/', function () {
     return view('welcome');
 });
 
-//route for greeting
+// Route for greeting
 Route::get('/greet', [GreetController::class, 'showGreeting']);
